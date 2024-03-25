@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 
         glue = "stapdefinitions",
         features = "src/test/resources/feauters"
-        ,tags = "@cucmber" ,
+        , tags = "@cucmber",
         dryRun = true
 )
 public class runner {

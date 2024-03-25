@@ -1,4 +1,4 @@
-package stapdefinitions;
+package stapdefinitions.HomeWork.Day1;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -14,7 +14,7 @@ import java.time.Duration;
 
 public class TC01_samsungSearch {
 
-   static WebDriver driver;
+    static WebDriver driver;
 
     @Given("user gose to google page")
     public void user_gose_to_google_page() {
@@ -23,7 +23,7 @@ public class TC01_samsungSearch {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.google.com");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(12));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
 
     @When("user searches for samsung")

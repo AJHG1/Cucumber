@@ -1,6 +1,6 @@
 Feature: Task in site
 
-@samsung
+  @samsung
   Scenario: TC01_samsungSearch
     Given user gose to google page
     When user searches for samsung
