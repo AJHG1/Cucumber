@@ -8,17 +8,14 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
-        glue = "stapdefinitions",
-        //features = "src/test/resources/feauters"
-        //, tags = "@cucmber",
-        //dryRun = true
 
-        //glue = "stapdefinitions",
+        glue = "stapdefinitions",
         features = "src/test/resources/feauters",
-        tags = "@HW2"
+        tags = "@HomeWork2"
+        , dryRun = true
 
 
 )
-public class runner {
+public class runner_HW2 {
 
 }

@@ -15,14 +15,6 @@ public class TC02_cucumberSearch {
 
     WebDriver driver;
 
-    @Given("user go to google page")
-    public void user_go_to_google_page() {
-        // Write code here that turns the phrase above into concrete actions
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("https://www.google.com");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-    }
 
     @When("user search for cucumber")
     public void user_search_for_cucumber() {

@@ -9,7 +9,7 @@ Feature: Task in site
 #-----------------------------------------------
   @cucmber
   Scenario: TC02_cucumberSearch
-    Given user go to google page
+    Given user gose to google page
     When user search for cucumber
-    Then tests that the page title contains the word cucumber
+    Then tests that the page title contains the word cucmber
     And close the page

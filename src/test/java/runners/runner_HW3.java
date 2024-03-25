@@ -9,16 +9,12 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 
         glue = "stapdefinitions",
-        //features = "src/test/resources/feauters"
-        //, tags = "@cucmber",
-        //dryRun = true
-
-        //glue = "stapdefinitions",
-        features = "src/test/resources/feauters",
-        tags = "@HW2"
+        features = "src/test/resources/feauters"
+        , tags = "@HomeWork3",
+        dryRun = true
 
 
 )
-public class runner {
+public class runner_HW3 {
 
 }

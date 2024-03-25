@@ -6,7 +6,7 @@ Feature: Name of the feature file
     Given I open the browser
     And I am on the google homepage
 
-
+#-----------
   Scenario: The name of scenario
 
     When I search for amazon on google
