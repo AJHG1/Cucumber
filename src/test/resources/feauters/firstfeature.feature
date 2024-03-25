@@ -1,9 +1,20 @@
-Feature: name of the feature
+Feature: Name of the feature file
 
-  this is the description that i am adding to the feature file
+  This is the description that i am adding to the feature file
 
-  Scenario: the name of scenario
-    Given I open the bowser
-    And I am in the google HomePge
+  Background: the name of background
+    Given I open the browser
+    And I am on the google homepage
+
+
+  Scenario: The name of scenario
+
     When I search for amazon on google
-    Then i should see amazon in the result
+    Then I should see amazon on the results
+    Then I close the browser
+#-----------------------------------------------------------------
+  Scenario: The name of second scenario
+
+    When I search for "String" on google
+    Then I should see "String" on the results
+    Then I close the browser
