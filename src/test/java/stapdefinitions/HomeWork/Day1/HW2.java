@@ -22,7 +22,7 @@ public class HW2 {
 
     WebDriver driver;
 
-    @Given("user gose to google page")
+    @Given("user gose to google page2")
     public void user_gose_to_google_page() {
         // Write code here that turns the phrase above into concrete actions
         driver = new ChromeDriver();
@@ -38,7 +38,7 @@ public class HW2 {
     }
 
     @Then("Click buttons to see message All Buttons Clicked")
-    public void click_buttons_to_see_message_all_buttons_clicked() {
+    public void click_buttons_to_see_message_all_buttons_clicked() throws InterruptedException {
         // Write code here that turns the phrase above into concrete actions
         WebElement button = driver.findElement(By.id("button00"));
         button.click();
@@ -46,8 +46,9 @@ public class HW2 {
         button.sendKeys(Keys.TAB, Keys.ENTER);
         button.sendKeys(Keys.TAB, Keys.ENTER);
 
+        Thread.sleep(5000);
         WebElement massage = driver.findElement(By.id("buttonmessage"));
-        Assert.assertEquals("All Buttons Clicked", massage);
+        Assert.assertEquals("All Buttons Clicked", massage.getText());
 
     }
 

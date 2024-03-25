@@ -6,7 +6,7 @@ Feature: HW2
 
 @HomeWork2
   Scenario: HW2
-    Given user gose to google page
+    Given user gose to google page2
     When user searches Simple Dynamic Buttons
     Then Click buttons to see message All Buttons Clicked
 

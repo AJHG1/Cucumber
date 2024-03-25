@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 
 
         glue = "stapdefinitions",
-        features = "src/test/resources/feauters",
+        features = "src/test/resources/feauters/Homework/Day1/HW2.feature",
         tags = "@HomeWork2"
         , dryRun = true
 
