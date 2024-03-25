@@ -4,7 +4,7 @@
 @HW2
 Feature: HW2
 
-@HomeWork2
+  @HomeWork2
   Scenario: HW2
     Given user gose to google page2
     When user searches Simple Dynamic Buttons

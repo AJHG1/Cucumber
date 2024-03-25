@@ -9,16 +9,15 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 
         glue = "stapdefinitions",
-        //features = "src/test/resources/feauters"
-        //, tags = "@cucmber",
-        //dryRun = true
-
-        //glue = "stapdefinitions",
         features = "src/test/resources/feauters",
         tags = "@HW2"
 
 
 )
 public class runner {
+// i have 2 tag
+//    1 - @cucmber
+//    2 - @samsung
+//
 
 }
