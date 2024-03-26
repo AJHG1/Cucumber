@@ -40,12 +40,20 @@ public class HW2 {
     @Then("Click buttons to see message All Buttons Clicked")
     public void click_buttons_to_see_message_all_buttons_clicked() throws InterruptedException {
         // Write code here that turns the phrase above into concrete actions
+        Thread.sleep(4000);
         WebElement button = driver.findElement(By.id("button00"));
         button.click();
-        button.sendKeys(Keys.TAB, Keys.ENTER);
-        button.sendKeys(Keys.TAB, Keys.ENTER);
-        button.sendKeys(Keys.TAB, Keys.ENTER);
-
+        Thread.sleep(5000);
+        WebElement button1 = driver.findElement(By.id("button01"));
+        button1.click();
+        Thread.sleep(5000);
+        WebElement button2 = driver.findElement(By.id("button02"));
+        button2.click();
+        Thread.sleep(5000);
+        WebElement button3 = driver.findElement(By.id("button03"));
+        button3.click();
+        Thread.sleep(5000);
+//        ---------------------------------------------------------------
         Thread.sleep(5000);
         WebElement massage = driver.findElement(By.id("buttonmessage"));
         Assert.assertEquals("All Buttons Clicked", massage.getText());
