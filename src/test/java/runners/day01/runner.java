@@ -1,4 +1,4 @@
-package runners;
+package runners.day01;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -9,9 +9,15 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
-        glue = "stapdefinitions",
+        glue = "stepdefinitions",
         features = "src/test/resources/feauters",
-        tags = "@samsung"
+        tags = "@samsung",
+        plugin = {
+
+                "html:cucmber-report/report.html",
+                "json:cucmber-report/json/report.json"
+        },
+        dryRun = true
 
 
 )

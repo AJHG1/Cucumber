@@ -1,0 +1,84 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-03-27T06:51:43.102Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1994600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.day02.Hooks.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "TC01_samsungSearch",
+        "description": "",
+        "id": "task-in-site;tc01-samsungsearch",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.day02.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 997700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user gose to google page",
+            "match": {
+              "location": "stepdefinitions.HomeWork.Day1.TC01_samsungSearch.user_gose_to_google_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user searches for samsung",
+            "match": {
+              "location": "stepdefinitions.HomeWork.Day1.TC01_samsungSearch.user_searches_for_samsung()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "tests that the page title contains the word samsung",
+            "match": {
+              "location": "stepdefinitions.HomeWork.Day1.TC01_samsungSearch.tests_that_the_page_title_contains_the_word_samsung()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@samsung"
+          }
+        ]
+      }
+    ],
+    "name": "Task in site",
+    "description": "",
+    "id": "task-in-site",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feauters/Homework/Day1/TC1AndTC2.feature",
+    "tags": []
+  }
+]

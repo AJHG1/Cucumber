@@ -1,4 +1,4 @@
-package stapdefinitions;
+package stepdefinitions.day01;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -7,18 +7,14 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import java.time.Duration;
+import utilities.Driver;
 
 public class CommonStepDef {
     WebDriver driver;
 
     @Given("I open the browser")
     public void i_open_the_browser() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        Driver.getDriver();
     }
 
     @Given("I am on the google homepage")
@@ -48,7 +44,9 @@ public class CommonStepDef {
 
     @Then("I close the browser")
     public void i_close_the_browser() {
-        driver.close();
+//        driver.close();
+        Driver.getDriver();
     }
+
 
 }

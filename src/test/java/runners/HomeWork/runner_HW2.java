@@ -1,4 +1,4 @@
-package runners;
+package runners.HomeWork;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -9,10 +9,14 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 
 
-        glue = "stapdefinitions",
+        glue = "stepdefinitions",
         features = "src/test/resources/feauters/",
-        tags = "@HomeWork2"
-//        , dryRun = true
+        tags = "@HomeWork2",
+        plugin = {
+
+        "html:cucmber-report/report1.html"
+},
+        dryRun = true
 
 
 )
