@@ -1,4 +1,4 @@
-package runners.day01;
+package Runner.day01;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -11,13 +11,15 @@ import org.junit.runner.RunWith;
 
         glue = "stepdefinitions",
         features = "src/test/resources/feauters",
-        tags = "@samsung",
+        tags = "@samsung or @cucmber",
         plugin = {
 
                 "html:cucmber-report/report.html",
-                "json:cucmber-report/json/report.json"
-        },
-        dryRun = true
+                "json:cucmber-report/json/report.json",
+                "pretty"
+                ,"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+        }
+//        dryRun = true
 
 
 )
