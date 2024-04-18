@@ -38,5 +38,6 @@ public class TC01_samsungSearch {
         //throw new io.cucumber.java.PendingException();
         Assert.assertTrue(driver.getTitle().contains("samsung"));
 
+        driver.close();
     }
 }

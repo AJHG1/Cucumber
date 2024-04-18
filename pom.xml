@@ -36,6 +36,12 @@
         </dependency>
 
         <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.28</version>
+        </dependency>
+
+        <dependency>
             <groupId>tech.grasshopper</groupId>
             <artifactId>extentreports-cucumber7-adapter</artifactId>
             <version>1.6.0</version>
@@ -51,7 +57,7 @@
                     <parallel>methods</parallel>
                     <threadCount>4</threadCount>
                     <includes>
-                        <include>**/Runner/*Runner*.java</include>
+                        <include>**/Runner/*runner.java</include>
                     </includes>
                     <redirectTestOutputToFile>true</redirectTestOutputToFile>
                 </configuration>

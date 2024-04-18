@@ -1,4 +1,4 @@
-package Runner.day01;
+package Runner;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 
         glue = "stepdefinitions",
         features = "src/test/resources/feauters",
-        tags = "@samsung or @cucmber",
+        tags = "@samsung",
         plugin = {
 
                 "html:cucmber-report/report.html",
