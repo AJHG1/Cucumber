@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 
         glue = "stepdefinitions",
         features = "src/test/resources/feauters",
-        tags = "@samsung",
+        tags = "@samsung or @cucmber",
         plugin = {
 
                 "html:cucmber-report/report.html",
