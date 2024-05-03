@@ -1,6 +1,6 @@
 Feature: Search for Desired Words on Amazon
 
-@HW1
+  @HW1
   Scenario Outline: Search for Keywords on Ebay
     * I open the browser
     Given the user navigates to the Ebay homepage

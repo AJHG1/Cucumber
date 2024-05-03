@@ -3,6 +3,7 @@ package stepdefinitions.day02;
 import io.cucumber.java.en.*;
 
 import java.util.List;
+
 class DataTablesStepDef {
     @When("I search for String on google")
     public void i_search_for_string_on_google(List<String> dataTable) {
@@ -13,10 +14,11 @@ class DataTablesStepDef {
         // Double, Byte, Short, Long, BigInteger or BigDecimal.
         //
         // For other transformations you can register a DataTableType.
-        for(int i = 0; i<dataTable.size(); i++){
+        for (int i = 0; i < dataTable.size(); i++) {
             System.out.println(dataTable.get(i));
         }
     }
+
     @Then("I should see String on the results")
     public void i_should_see_string_on_the_results(io.cucumber.datatable.DataTable dataTable) {
         // Write code here that turns the phrase above into concrete actions

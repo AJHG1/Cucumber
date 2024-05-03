@@ -12,12 +12,12 @@ import org.junit.runner.RunWith;
 
         glue = "stepdefinitions",
         features = "src/test/resources/feauters/day02/scenariooutlineTask.feature"
-         ,
+        ,
         plugin = {
 
-        "html:cucmber-report/report3.html"
-                ,"pretty"
-},
+                "html:cucmber-report/report3.html"
+                , "pretty"
+        },
         dryRun = true
 
 

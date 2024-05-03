@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
                 "html:cucmber-report/report.html",
                 "json:cucmber-report/json/report.json",
                 "pretty"
-                ,"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+                , "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         }
 //        dryRun = true
 

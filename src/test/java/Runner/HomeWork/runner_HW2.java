@@ -14,8 +14,8 @@ import org.junit.runner.RunWith;
         tags = "@HomeWork2",
         plugin = {
 
-        "html:cucmber-report/report1.html"
-},
+                "html:cucmber-report/report1.html"
+        },
         dryRun = true
 
 
